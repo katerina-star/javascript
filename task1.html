@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+    var count = 0
+    while (count <= 100) {
+        var i = 0;
+        for (var j = 1; j <= count; j++) {
+            if (count % j === 0) {
+                i++;
+            }
+        }
+        if (i === 2) {
+            console.log(count);
+        }
+        count++;
+    }
+</script>

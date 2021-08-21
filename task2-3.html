@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+    var basket = [["товар_1", 100, 3], ["товар_2", 200, 1], ["товар_3", 500, 2], ["товар_4", 300, 5]];
+
+    function countBasketPrice(basket) {
+        var result = 0;
+        for (var i = 0; i < basket.length; i++) {
+            result += basket[i][1] * basket[i][2];
+        }
+        return result;
+    }
+    alert(countBasketPrice(basket));
+</script>
