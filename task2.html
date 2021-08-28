@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+    var basket = {
+        products: [
+            {
+                name: 'товар_1',
+                cost: 100,
+                quantity: 3,
+            },
+            {
+                name: 'товар_2',
+                cost: 200,
+                quantity: 1,
+            },
+            {
+                name: 'товар_3',
+                cost: 500,
+                quantity: 2,
+            },
+            {
+                name: 'товар_4',
+                cost: 300,
+                quantity: 5,
+            }
+        ],
+
+        totalCost() {
+            return this.products.reduce(function (total, cartItem) {
+                return total + cartItem.cost * cartItem.quantity
+            }, 0);
+        },
+
+        amountofGoods() {
+            return this.products.reduce(function (total, cartItem) {
+                return total + cartItem.quantity
+            }, 0);
+        },
+    }
+
+    console.log(basket.totalCost());
+    console.log(basket.amountofGoods());
+
+
+</script>
